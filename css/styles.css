@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap');
+
+:root {
+  --htext-color: #00b39b;
+  --main-bg-color: #00b39b;
+  --main-text-color: #747474;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding-top: 70px;
+  font-family: Roboto, sans-serif;
+  color: var(--main-text-color);
+}
+
+/***** HEADER *****/
+
+header .inner {
+  box-shadow: 0 -2px 5px 0 rgba(0, 0, 0, 0.15);
+}
+
+header {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsla(0,0%,100%,.98);
+  transition: box-shadow .25s ease 0s;
+}
+header > a {
+  margin-left: 140px;
+}
+header > nav {
+  margin-right: 160px;
+}
+
+nav > a {
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 15 px;
+  color: var(--main-text-color);
+}
+nav a:hover {
+  color: var(--htext-color);
+}
+nav a:first-child {
+  color: var(--htext-color);
+}
+
+/***** Main Content *****/
+
+#content {
+  max-width: 1015px;
+  margin: 32px auto 80px;
+  text-align: center;
+}
+
+#content h1 {
+  font-size: 2.1rem;
+  font-weight: 300;
+  margin: 1em 0;
+  color: var(--htext-color);
+}
+
+#content p {
+  display: inline-block;
+  width: 477px;
+  font-size: 16px;
+  text-align: left;
+  line-height: 1.7rem;
+  margin: 10px;
+}
+
+/***** Section 1 *****/
+
+.section-1 {
+  width: 1015px;
+  margin: 40px auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.section-1-element {
+  width: 33.33%;
+  height: 345px;
+  margin: 10px;
+  padding: 32px;
+  font-size: 1.2rem;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.section-1-element div h3, h4 {
+  margin: 0;
+}
+
+.section-1 .elem1 {
+  background: #00ccb1;
+}
+
+.section-1 .elem2 {
+  background: #3d83df;
+}
+
+.section-1 .elem3 {
+  background: #1b2734;
+}
+
+.section-1-element h3 {
+  padding: 6px 0 10px 0;
+  font-size: 1.55rem;
+  font-weight: 400;
+}
+
+.section-1-element h4 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+select {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  text-decoration: underline;
+  padding-bottom: 15px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+option {
+  color: black;
+}
+
+.sel {
+  padding-top: 30px;
+}
+
+/***** Section 2 *****/
+
+.section-2 {
+  width: 1015px;
+  margin: 40px auto 40px;
+  padding: 10px;
+}
+
+.section-2 h2 {
+  margin: 0;
+  float: left;
+  width: 30%;
+  font-size: 1.62rem;
+  font-weight: 300;
+  color: var(--htext-color);
+  padding: 0.5rem 5rem 1rem 1rem  ;
+}
+
+.section-2 ul {
+  margin-top: 0;
+  display: grid;
+  grid-template-columns: 125px 125px 125px 125px;
+  grid-template-rows: 40px 40px 40px;
+  column-gap: 45px;
+}
+
+.section-2 ul li {
+  font-size: 1rem;
+  list-style: none;
+}
+
+.section-2 a {
+  width: 124px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  color: var(--main-text-color);
+}
+
+.section-2 a:hover {
+  color: var(--main-bg-color);
+}
+
+/***** Section 3 *****/
+
+.section-3 {
+  height: 615px;
+  background-color: #e5faf8;
+  background-image: linear-gradient(-45deg,rgba(0,204,177,.01) 5%,rgba(61,199,223,.1));
+  background-image: url(../src/logocropped.png);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+.section-3- {
+  width: 1015px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.section-3-l {
+  margin-top: 50px;
+  width: 40%;
+  float: left;
+}
+
+.section-3-l h2 {
+  font-size: 2.125rem;
+  font-weight: 300;
+  line-height: 40px;
+  letter-spacing: 1px;
+  color: var(--htext-color);
+}
+
+.section-3-l p {
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.section-3-r {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.section-3-r-element {
+  width: 230px;
+  height: 250px;
+  background-color: #fff;
+  margin: 20px 10px 5px 10px;
+  padding: 20px;
+  border-radius: 5px;
+}
+.element {
+  position: relative;
+  top: 40px;
+  z-index: 0;
+}
+.section-3-r-element h3 {
+  margin-bottom: 0;
+}
+.item2 {
+  padding: 25px;
+}
+.item3 {
+  padding: 25px;
+}
+.item4 {
+  padding: 25px;
+}
+.section-3-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.section-3-r-element h3 {
+  font-size: 1.39rem;
+  font-weight: 300;
+  color: var(--htext-color);
+}
+.section-3-r-element p {
+  font-size: 0.85rem;
+}
+
+.section-3-r:first-child {
+  margin-top: 100px;
+}
+
+/***** Section 4 *****/
+
+.section-4 {
+  width: 1015px;
+  margin: auto;
+}
+
+.section-4 .section-4-f {
+  margin: 75px;
+  padding: 0 200px;
+  text-align: center;
+}
+.section-4-f h2 {
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 40px;
+  letter-spacing: 1px;
+  color: var(--htext-color);
+}
+
+.section-4-f p {
+  font-size: .86rem;
+  line-height: 25px;
+}
+
+.section-4-s {
+  width: 1015px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.section-4-s-element {
+  width: 310px;
+  height: 340px;
+  margin: 10px;
+  border-radius: 6px;
+}
+.section-4-s-element:hover {
+  text-decoration: none;
+  box-shadow: 0 5px 30px 2px lightgray;
+  transition: box-shadow .2s ease 0s;
+}
+.section-4-slink {
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+.section-4-slink div {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-around;
+  color: var(--main-text-color);
+}
+
+/***** Section 4 *****/
+
+.section-5 {
+  width: 100%;
+  padding: 80px 0 80px;
+  border-bottom: 1px solid rgb(237, 232, 232);  
+  text-align: center;
+}
+
+.section-5 h2 {
+  font-size: 1.9rem;
+  font-weight: 300;
+}
+
+footer div {
+  font-size: .9rem;
+  text-align: center;
+  line-height: .5;
+  padding: 20px 0;
+}
+
+p small a {
+  text-decoration: none;
+  color: #3d83df;
+}
+
+/****** All button  ******/
+
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  /* position: relative; */
+  outline: 0;
+  border: 0;
+  border-radius: 4px;
+  padding: 1.1666666667em 1.5em;
+  background: #3d83df;
+  line-height: 1em;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: .04em;
+  font-size: .65rem;
+  text-align: center;
+  text-decoration: none!important;
+  text-transform: uppercase;
+  transition: all .2s ease 0s;
+}
+
+.btn:hover {
+  background: #296eca;
+}
